@@ -9,7 +9,7 @@ const SubmitDetails = () => {
     const onSubmit = data => {
 
         const employeeDetails = { ...data }
-        fetch(`http://localhost:8000/employeeDetails`, {
+        fetch(`https://vast-gorge-12174.herokuapp.com/employeeDetails`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(employeeDetails)

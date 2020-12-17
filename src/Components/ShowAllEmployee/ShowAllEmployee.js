@@ -7,7 +7,7 @@ import ShowAllEmployeeDetails from './ShowAllEmployeeDetails';
 const ShowAllEmployee = () => {
     const [allEmployee, setAllEmployee] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:8000/allEmployee`)
+        fetch(`https://vast-gorge-12174.herokuapp.com/allEmployee`)
             .then(res => res.json())
             .then(data => setAllEmployee(data));
     }, []
